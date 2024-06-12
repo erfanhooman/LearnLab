@@ -1,0 +1,38 @@
+"""Docker"""
+
+- DOCKER:
+    DOCKER FILE is a file that contain instruction, docker use this file to convert instruction to the image
+    IMAGE its contain anything that application need to be run (such as os, operating file, external packages)
+    then we can use the image to create an isolated environment know as CONTAINER
+
+- To start the docker first we create a 'DockerFile'
+    ""NOTE:you can see the commands in DockerFile""
+    
+    then use the command 
+        "docker build -t my-python-app ." 
+            to build an image
+    
+    And finally, you can run your Docker container:
+        "docker run my-python-app"
+        
+    you can see the image in your system with this command:
+        "docker image ls"
+
+
+- You can push your image on dockerhub with this instruction:
+    first tag you image :
+        "docker tag my-python-app <yourusername>/my-python-app:<tag>"
+        
+    login to dockerhub:
+        "docker login"
+    Enter your Docker Hub username and password when prompted
+    
+    push your image:
+        "docker push yourusername/my-python-app:<tag>"
+    
+    
+- After pushing that you can test your image on the play with docker
+    after opening the "https://www.docker.com/play-with-docker/" pull your image with command   
+        "docker pull "yourusername/my-python-app"
+    
+    then you can see your image and run the docker container
