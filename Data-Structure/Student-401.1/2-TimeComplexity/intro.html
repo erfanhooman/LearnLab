@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <title>Time Complexity</title>
+</head>
+<body>
+    <header>
+        <h1 id="intro-title">Time Complexity: <span style="font-size: 28px">Intro</span></h1>
+    </header>
+    <main>
+        <section>
+            <p>There are lot of Algorithm for each problem</p>
+
+            <h2>- why we analyze the Algorithm ?</h2>
+            <p>1. Check and predict the execution time and the amount of memory used</p>
+            <p>2. Comparison of different algorithms to solve a problem in terms of efficiency</p>
+
+            <h2>- Effective factors in the speed of program execution</h2>
+            <p>1. Type of hardware</p>
+            <p>2. Type of programing (compiler)</p>
+            <p>3. Programing language</p>
+            <p>4. Size of input</p>
+            <p>5. Combination of input</p>
+
+            <h2>- Number of operation</h2>
+            <p>The number of operations a processor performs when executing an algorithm is unique and computable,
+                based on the code structure and the algorithm itself. This number of operations is directly related to the execution time of the algorithm.
+                However, the execution time can vary depending on different factors, such as the number of input elements, the maximum value of input elements, and other variables.</p>
+            <p>In other words, the exact count of operations performed by a processor during algorithm execution is determined by the code and algorithm, and it is not dependent on the specific hardware or processors.
+                This count of operations is a critical factor in analyzing the algorithm's efficiency.</p>
+            <p>The relationship between the number of operations and the execution time is not fixed, as it can be influenced by various factors,
+                including the input size, input values, and other considerations. Therefore, while the number of operations is a unique and calculable measure of algorithm complexity,
+                the actual time it takes to execute the algorithm may vary in practice based on the specific circumstances and hardware used.</p>
+
+            <h2>- In algorithm analysis, there are several methods to determine the time complexity:</h2>
+            <ul>
+                <li>
+                    <p>1. <a href="methods.html#Detailed-Analysis">Detailed Analysis</a> (Exact Counting) : روش تحلیل تفضیلی</p>
+                    <p1>This method involves a detailed, line-by-line analysis of the algorithm to count the exact number of operations.</p1>
+                    <p1>It provides a precise count of operations and is useful for small-scale algorithms or when high accuracy is required.</p1>
+                    <p1>It can be time-consuming for complex algorithms.</p1>
+                </li>
+                <li>
+                    <p>2. <a href="methods.html#Substitution-Iteration">Substitution and Iteration:</a> جایگزینی و تکرار</p>
+                    <p1>This method involves expressing the number of operations using a recurrence relation.</p1>
+                    <p1>It simplifies the analysis by expressing the running time of an algorithm in terms of smaller inputs.</p1>
+                    <p1>Solving the recurrence relation provides a closed-form expression for the time complexity.</p1>
+                </li>
+                <li>
+                    <p>3. <a href="methods.html#Master-Theorem">Master Theorem:</a> قضیه اصلی</p>
+                    <p1>The master theorem is a specific method used to analyze the time complexity of algorithms with recursive structures.</p1>
+                    <p1>It provides a set of rules for solving recurrence relations and determining the time complexity.</p1>
+                    <p1>It's particularly useful for divide-and-conquer algorithms.</p1>
+                </li>
+                <li>
+                    <p>4. <a href="#">Change of Variable:</a> تغییر متغییر</p>
+                    <p1>This method involves changing variables in the analysis to simplify the time complexity expression.</p1>
+                    <p1>It can help make the time complexity analysis more straightforward.</p1>
+                </li>
+                <li>
+                    <p>5. <a href="#">Mathematical Induction and Guessing:</a> حدس و استقرای ریاضی</p>
+                    <p1>This method combines mathematical induction and educated guessing.</p1>
+                    <p1>You guess a solution, use mathematical induction to prove it, and adjust the guess if needed.</p1>
+                </li>
+                <li>
+                    <p>6. <a href="#">Recursion Tree:</a> درخت بازگشت</p>
+                    <p1>When analyzing recursive algorithms, drawing a recursion tree can help visualize the time complexity.</p1>
+                    <p1>The tree represents the recursive calls and their time complexity, making it easier to analyze.</p1>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
